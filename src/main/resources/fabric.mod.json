@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "id": "serverseeker",
+  "version": "${version}",
+  "name": "ServerSeeker",
+  "description": "A fork of the original MeteorServerSeeker, updated to use the MineScan API (data.minescan.xyz) since ServerSeeker is dead. Search for basically any Minecraft server that exists.",
+  "authors": [
+    "DAMcraft",
+    "cheezball69420"
+  ],
+  "contact": {
+    "repo": "https://github.com/cqlnx/MeteorServerSeeker/",
+    "homepage": "https://minescan.xyz/",
+    "issues": "https://github.com/cqlnx/MeteorServerSeeker/issues",
+    "sources": "https://github.com/cqlnx/MeteorServerSeeker/"
+  },
+  "icon": "assets/serverseeker/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "meteor": [
+      "de.damcraft.serverseeker.ServerSeeker"
+    ]
+  },
+  "mixins": [
+    "serverseeker.mixins.json"
+  ],
+  "custom": {
+    "meteor-client:color": "153,45,34",
+    "modmenu": {
+      "parent": {
+        "id": "meteor-client"
+      }
+    }
+  },
+  "depends": {
+    "java": ">=${jdk_version}",
+    "minecraft": "${minecraft_version}",
+    "meteor-client": "*"
+  }
+}
