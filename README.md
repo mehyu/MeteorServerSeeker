@@ -20,7 +20,12 @@
 ![Github Stars](https://img.shields.io/github/stars/cqlnx/MeteorServerSeeker?style=for-the-badge&logo=github&labelColor=2b2b2b&color=2b2b2b)
 ![Downloads](https://img.shields.io/github/downloads/cqlnx/MeteorServerSeeker/total?style=for-the-badge&logo=github&labelColor=2b2b2b&color=2b2b2b)
 
-
+<div align="center">
+    <h3>Official ServerSeeker Discord — join for support</h3>
+    <a href="https://discord.gg/jVyHyYbqdS">
+        <img src="https://discord.com/api/guilds/1363292215643869327/widget.png?style=banner2">
+    </a>
+</div>
 
 ## How to use:
 ### Searching for servers
