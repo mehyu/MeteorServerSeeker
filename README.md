@@ -15,7 +15,7 @@
 
 <div align="center">
     <h3>Official MineScan Discord — join for support</h3>
-    <a href="https://discord.gg/jVyHyYbqdS">
+    <a href="https://discord.gg/AYbDNEWgHE">
         <img src="https://discord.com/api/guilds/1363292215643869327/widget.png?style=banner2">
     </a>
 </div>
