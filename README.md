@@ -24,6 +24,7 @@
 ![Github Stars](https://img.shields.io/github/stars/cqlnx/MeteorServerSeeker?style=for-the-badge&logo=github&labelColor=2b2b2b&color=2b2b2b)
 ![Downloads](https://img.shields.io/github/downloads/cqlnx/MeteorServerSeeker/total?style=for-the-badge&logo=github&labelColor=2b2b2b&color=2b2b2b)
 <br>
+<br>
 
 ## How to use:
 ### Searching for servers
