@@ -19,12 +19,12 @@
         <img src="https://discord.com/api/guilds/1363292215643869327/widget.png?style=banner2">
     </a>
 </div>
-
+<br>
 <a href="https://data.minescan.xyz"> ![Powered by MineScan](https://img.shields.io/badge/Powered%20by%20MineScan-%232b2b2b.svg?style=for-the-badge&logo=python&logoColor=18d3ae)</a>
 ![Github Stars](https://img.shields.io/github/stars/cqlnx/MeteorServerSeeker?style=for-the-badge&logo=github&labelColor=2b2b2b&color=2b2b2b)
 ![Downloads](https://img.shields.io/github/downloads/cqlnx/MeteorServerSeeker/total?style=for-the-badge&logo=github&labelColor=2b2b2b&color=2b2b2b)
 <br>
-<br>
+
 
 ## How to use:
 ### Searching for servers
