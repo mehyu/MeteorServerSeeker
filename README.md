@@ -12,7 +12,6 @@
 <div align="center">
     <h3>A fork of the original MeteorServerSeeker, updated to use the MineScan API since ServerSeeker is dead.</h3>
 </div>
-<br>
 
 <div align="center">
     <h3>Official ServerSeeker Discord — join for support</h3>
