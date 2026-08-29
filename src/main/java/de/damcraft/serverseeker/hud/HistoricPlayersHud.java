@@ -19,7 +19,7 @@ public class HistoricPlayersHud extends HudElement {
     public List<ServerInfoResponse.Player> players = List.of();
     public Boolean isCracked = false;
 
-    public final static HudElementInfo<HistoricPlayersHud> INFO = new HudElementInfo<>(ServerSeeker.HUD_GROUP, "historic-players", "Displays players that were on this server in the past.", HistoricPlayersHud::new);
+    public final static HudElementInfo<HistoricPlayersHud> INFO = new HudElementInfo<>(Hud.GROUP, "historic-players", "Displays players that were on this server in the past.", HistoricPlayersHud::new);
     private final SettingGroup sgGeneral = settings.getDefaultGroup();
 
     public HistoricPlayersHud() {
@@ -102,8 +102,8 @@ public class HistoricPlayersHud extends HudElement {
 
         line++;
         List<String> alreadyDisplayed = new ArrayList<>();
-        if (showCurrentPlayers.get() && mc.player != null) {
-            for (PlayerInfo player : mc.getConnection().getListedOnlinePlayers()) {
+        if (showCurrentPlayers.get() && mc.player != null && mc.player.connection != null) {
+            for (PlayerInfo player : mc.player.connection.getListedOnlinePlayers()) {
                 if (line >= limit.get()) {
                     more++;
                     continue;
@@ -186,6 +186,6 @@ public class HistoricPlayersHud extends HudElement {
             if (renderer.textWidth(text) > longestLine) longestLine = renderer.textWidth(text);
         }
 
-        setSize(longestLine, line * renderer.textHeight());
+        box.setSize(longestLine, line * renderer.textHeight());
     }
 }

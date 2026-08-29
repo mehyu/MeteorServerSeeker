@@ -3,14 +3,14 @@ mod-version = "4.4.0"
 
 # Fabric (https://fabricmc.net/develop)
 jdk = "25"
-minecraft = "26.2"
-fabric-loader = "0.19.3"
+minecraft = "26.1.2"
+fabric-loader = "0.19.2"
 
 # Loom (https://github.com/FabricMC/fabric-loom)
-loom = "1.17-SNAPSHOT"
+loom = "1.16-SNAPSHOT"
 
 # Meteor (https://github.com/MeteorDevelopment/meteor-client/)
-meteor = "26.2-SNAPSHOT"
+meteor = "26.1.2-SNAPSHOT"
 
 # Fabric API (https://fabricmc.net/develop)
 fabric-resource-loader = "2.0.13+9edec1269e"

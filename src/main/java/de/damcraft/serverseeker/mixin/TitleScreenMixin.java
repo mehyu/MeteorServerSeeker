@@ -16,7 +16,7 @@ public class TitleScreenMixin {
         // Check if meteor-client is installed
         if (!FabricLoader.getInstance().isModLoaded("meteor-client")) {
             info.cancel();
-            Minecraft.getInstance().setScreenAndShow(new InstallMeteorScreen());
+            Minecraft.getInstance().setScreen(new InstallMeteorScreen());
         }
     }
 }

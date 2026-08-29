@@ -134,7 +134,7 @@ public class FindPlayerScreen extends WindowScreen {
                 };
 
                 WButton serverInfoButton = theme.button("Server Info");
-                serverInfoButton.action = () -> this.minecraft.setScreenAndShow(new ServerInfoScreen(serverIP));
+                serverInfoButton.action = () -> this.minecraft.setScreen(new ServerInfoScreen(serverIP));
 
                 table.add(addServerButton);
                 table.add(joinServerButton);
@@ -154,7 +154,7 @@ public class FindPlayerScreen extends WindowScreen {
         MultiplayerScreenUtil.saveList(multiplayerScreen);
         MultiplayerScreenUtil.reloadServerList(multiplayerScreen);
         if (minecraft == null) return;
-        minecraft.setScreenAndShow(this.multiplayerScreen);
+        minecraft.setScreen(this.multiplayerScreen);
     }
 
     @Override

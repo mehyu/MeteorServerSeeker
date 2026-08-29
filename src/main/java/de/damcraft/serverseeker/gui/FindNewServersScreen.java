@@ -268,7 +268,7 @@ public class FindNewServersScreen extends WindowScreen {
 
             // Close screen
             if (this.minecraft == null) return;
-            minecraft.setScreenAndShow(this.multiplayerScreen);
+            minecraft.setScreen(this.multiplayerScreen);
         };
 
         WTable table = add(theme.table()).widget();
@@ -306,7 +306,7 @@ public class FindNewServersScreen extends WindowScreen {
                 -> ConnectScreen.startConnecting(new TitleScreen(), Minecraft.getInstance(), new ServerAddress(hap.getHost(), hap.getPort()), new ServerData("a", hap.toString(), ServerData.Type.OTHER), false, null);
 
             WButton serverInfoButton = theme.button("Server Info");
-            serverInfoButton.action = () -> this.minecraft.setScreenAndShow(new ServerInfoScreen(serverIP));
+            serverInfoButton.action = () -> this.minecraft.setScreen(new ServerInfoScreen(serverIP));
 
             table.add(addServerButton);
             table.add(joinServerButton);

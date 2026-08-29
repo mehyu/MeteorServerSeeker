@@ -41,7 +41,7 @@ public class CountrySetting extends Setting<Country> {
                 nameLabel.set(setting.get().name);
             });
 
-            mc.setScreenAndShow(screen);
+            mc.setScreen(screen);
         };
 
         WButton reset = list.add(theme.button(GuiRenderer.RESET)).expandCellX().right().widget();
@@ -70,7 +70,7 @@ public class CountrySetting extends Setting<Country> {
 
     @Override
     protected Country load(CompoundTag tag) {
-        return ServerSeeker.COUNTRY_MAP.get(tag.getString("value"));
+        return ServerSeeker.COUNTRY_MAP.get(tag.getStringOr("value", ""));
     }
 
     public static class Builder extends SettingBuilder<Builder, Country, CountrySetting> {

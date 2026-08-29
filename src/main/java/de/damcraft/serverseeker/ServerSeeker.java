@@ -32,8 +32,7 @@ public class ServerSeeker extends MeteorAddon {
     add(new Join misconfigured BungeeCord backends with any name you want!())
      */
     public static final Logger LOG = LogUtils.getLogger();
-    public static final Category CATEGORY = new Category("ServerSeeker");
-    public static final HudGroup HUD_GROUP = new HudGroup("ServerSeeker");
+    public static final Category CATEGORY = new Category("ServerSeeker", net.minecraft.world.item.Items.SPYGLASS::getDefaultInstance);
     public static final Map<String, Country> COUNTRY_MAP = new Object2ReferenceOpenHashMap<>();
 
     public static final Gson gson = new Gson();

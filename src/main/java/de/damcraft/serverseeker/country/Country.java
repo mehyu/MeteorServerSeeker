@@ -1,7 +1,7 @@
 package de.damcraft.serverseeker.country;
 
-import com.mojang.blaze3d.GpuFormat;
 import com.mojang.blaze3d.textures.FilterMode;
+import com.mojang.blaze3d.textures.TextureFormat;
 import de.damcraft.serverseeker.ServerSeeker;
 import meteordevelopment.meteorclient.renderer.Texture;
 import meteordevelopment.meteorclient.utils.network.MeteorExecutor;
@@ -107,7 +107,7 @@ public class Country implements Comparable<Country> {
 
                 // Texture creation and upload must happen on the render thread
                 mc.execute(() -> {
-                    Texture texture = new Texture(bufferedImage.getWidth(), bufferedImage.getHeight(), GpuFormat.RGBA8_UNORM, FilterMode.NEAREST, FilterMode.NEAREST);
+                    Texture texture = new Texture(bufferedImage.getWidth(), bufferedImage.getHeight(), TextureFormat.RGBA8, FilterMode.NEAREST, FilterMode.NEAREST);
                     texture.upload(data);
                     this.texture = texture;
                     this.state = State.DONE;

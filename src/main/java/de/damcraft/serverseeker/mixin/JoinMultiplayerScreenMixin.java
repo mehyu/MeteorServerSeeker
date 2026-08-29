@@ -34,7 +34,7 @@ public abstract class JoinMultiplayerScreenMixin extends Screen {
                 Component.literal("ServerSeeker"),
                 onPress -> {
                     if (this.minecraft == null) return;
-                    this.minecraft.setScreenAndShow(new ServerSeekerScreen((JoinMultiplayerScreen) (Object) this));
+                    this.minecraft.setScreen(new ServerSeekerScreen((JoinMultiplayerScreen) (Object) this));
                 }
             )
                 .pos(150, 3)
@@ -51,7 +51,7 @@ public abstract class JoinMultiplayerScreenMixin extends Screen {
                     ServerSelectionList.Entry entry = this.serverSelectionList.getSelected();
                     if (entry != null) {
                         if (this.minecraft == null) return;
-                        this.minecraft.setScreenAndShow(new GetInfoScreen((JoinMultiplayerScreen) (Object) this, entry));
+                        this.minecraft.setScreen(new GetInfoScreen((JoinMultiplayerScreen) (Object) this, entry));
                     }
                 }
             )

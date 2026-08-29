@@ -26,11 +26,11 @@ public class ServerSeekerScreen extends WindowScreen {
         WButton cleanUpServersButton = widgetList.add(this.theme.button("Clean up")).expandX().widget();
         newServersButton.action = () -> {
             if (this.minecraft == null) return;
-            this.minecraft.setScreenAndShow(new FindNewServersScreen(this.multiplayerScreen));
+            this.minecraft.setScreen(new FindNewServersScreen(this.multiplayerScreen));
         };
         findPlayersButton.action = () -> {
             if (this.minecraft == null) return;
-            this.minecraft.setScreenAndShow(new FindPlayerScreen(this.multiplayerScreen));
+            this.minecraft.setScreen(new FindPlayerScreen(this.multiplayerScreen));
         };
         cleanUpServersButton.action = () -> {
             if (this.minecraft == null) return;
@@ -59,6 +59,6 @@ public class ServerSeekerScreen extends WindowScreen {
         MultiplayerScreenUtil.saveList(multiplayerScreen);
         MultiplayerScreenUtil.reloadServerList(multiplayerScreen);
 
-        minecraft.setScreenAndShow(this.multiplayerScreen);
+        minecraft.setScreen(this.multiplayerScreen);
     }
 }
